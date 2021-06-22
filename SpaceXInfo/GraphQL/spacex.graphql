@@ -1,0 +1,17 @@
+query fetchShips {
+	ships {
+		...ShipModel
+	}
+}
+
+fragment ShipModel on Ship {
+	image
+	model
+	name
+	speed_kn
+	successful_landings
+	id
+	active
+	year_built
+	type
+}
